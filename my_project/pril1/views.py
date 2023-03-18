@@ -7,4 +7,7 @@ def  index(request):
 def about(request):
     return HttpResponse('<h2>Обо мне</h2>')
 
+def user(request,name):
+    return HttpResponse(f"<h1>Имя {name}</h1>")
+
 
